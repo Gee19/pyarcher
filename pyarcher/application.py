@@ -57,7 +57,7 @@ class Application(ArcherBase):
 
             validated_field = self.resource(
                 field_type.class_name,
-                field.metadata[field_type.key]
+                obj_id=field.metadata[field_type.key]
             )
 
             self._fields.append(validated_field)
